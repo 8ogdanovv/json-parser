@@ -293,10 +293,12 @@ function renderText(json) {
           </style>
         </head>
         <body
-          style="position: relative; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: ${zeroBackGroundRGBA};"
+          style="height: 50dvh; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: ${zeroBackGroundRGBA};"
         >
-          <div class="rectangle" style="display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; top: ${Math.abs(y)}px; border: ${rectangle.strokeWeight}px ${rectangle.fills[0].type.toLowerCase()} ${getValidRGBA(rectangle.fills[0].color)}; width: ${rectangle.absoluteRenderBounds.width}px; height: ${rectangle.absoluteRenderBounds.height}px;">
-            <div style="position: relative; width: ${width}px; height: ${height}px; color: ${zeroColor};">
+          <div class="rectangle" style="display: flex; flex-direction: column; align-items: center;
+          position: relative; top: 100px;
+          justify-content: center; border: ${rectangle.strokeWeight}px ${rectangle.fills[0].type.toLowerCase()} ${getValidRGBA(rectangle.fills[0].color)}; width: ${rectangle.absoluteRenderBounds.width}px; height: ${rectangle.absoluteRenderBounds.height}px;">
+            <div style="margin: auto 0; width: ${width}px; height: ${height}px; color: ${zeroColor};">
               ${
                 compileTextWithStyles(textNode.characters, styleOverrideMap, inlineStylesObj)
               }
