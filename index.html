@@ -25,13 +25,13 @@
     label {
       display: flex;
       flex-direction: column;
-      align-self: center;
+      align-self: flex-start;
       justify-self: center;
     }
 
     label > span {
       display: inline-flex;
-      height: 5dvh;
+      height: 6.5dvh;
     }
 
     .h1 {
@@ -45,6 +45,8 @@
     button {
       border-radius: 10px;
       font-size: 125%;
+      position: relative;
+      z-index: 2;
     }
 
     button:not([disabled]) {
@@ -95,6 +97,15 @@
     .top {
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .file {
+      flex-shrink: 1;
+    }
+
+    .textArea {
+      flex-grow: 1;
     }
 
     .bottom {
@@ -157,7 +168,7 @@
       <div class="input">
 
         <div class="top">
-          <label for="file">
+          <label for="file" class="file">
             <span>
               load .json file here
             </span>
@@ -166,11 +177,11 @@
           <span>
             |or|&nbsp;
           </span>
-          <label for="file">
-            <span>
+          <label for="textArea" class="textArea">
+            <span class="or">
               paste text json data here
             </span>
-            <textarea type="file" name="file" id="textArea" placeholder="{}"></textarea>
+            <textarea type="text" name="textArea" id="textArea" placeholder="{}"></textarea>
           </label>
         </div>
 
