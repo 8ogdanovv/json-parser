@@ -21,8 +21,6 @@ JSON Parser is a handy tool for developers and data analysts who work with JSON 
 - Render the JSON data as HTML, making it easier to view and analyze.
 - Copy the HTML representation of the JSON to your clipboard for easy sharing or embedding in documents.
 
-![JSON Parser](URL_TO_PROJECT_SCREENSHOT_OR_LOGO)
-
 You can try out the live demo [here](https://vadym4che.github.io/json-parser/).
 
 ## Project Structure
